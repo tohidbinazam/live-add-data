@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Product Details</h2>
+                        </div>
+                        <div class="card-body">
+                            <form action="" id="p_form">
+                                <input value="Gagor Halua" name="p_name" class="form-control" type="text" placeholder="Product Name">
+                                <input value="130" name="main_pri" class="form-control my-4" type="number" placeholder="Product Raguler Price">
+                                <input value="80" name="sale_price" class="form-control" type="number" placeholder="Product sale Price">
+                                <input value="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chia-porridge-a3b3dab-scaled.jpg?quality=90&resize=556,505" type="url" name="P-link" class="form-control my-4" placeholder="Product Photo link">
+                                <button type="submit" class="btn btn-primary form-control">Add Product</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-xl-9">
+                    <div class="row p_list">
+                        <!-- <div class="col-xl-3 mb-3">
+                            <div class="card">
+                                <img class="card-image" src="https://static.independent.co.uk/2021/12/29/17/food-adobo-9cf9b24e-5912-11ec-9a18-a506cf3aa31d.jpg?width=640&auto=webp&quality=75">
+                                <div class="card-body">
+                                    <h3>Gagor halua</h3>
+                                    <h5>130</h3>
+                                    <h4 class="text-danger">80</h4>
+                                    <i class="far fa-heart"></i>
+                                    <button class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dev_info my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Developer Details</h2>
+                        </div>
+                        <div class="card-body">
+                            <form action="" id="dev_data">
+                                <input value="Sapina" class="form-control" name="name" type="text" placeholder="Give your name">
+                                <input value="01994249463" class="form-control my-4" type="number" name="age" placeholder="Give your phone number">
+                                <select class="form-select my-4" name="location">
+                                    <option value="">-- select --</option>
+                                    <option value="Dhaka" selected>Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chattagong">Chattagong</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                </select>
+                                <input type="radio" value="Male" name="gender" id="male"> <label for="male">Male</label>
+                                <input type="radio" value="Female" name="gender" id="female" checked> <label for="female">Female</label><br>
+
+                                <input value="https://cdnv2.dropr.io/image/300x300/sf/5445691e-6678-4832-8c6f-b6a4bf802986.jpg?cache_buster=cd7e5da1643bf732331ad85f8b6f585ea82d987c" class="form-control my-4" type="url" name="P_url" placeholder="Give your photo URL">
+
+                                <input type="checkbox" value="HTML" name="skills" id="html" checked> <label for="html">HTML</label>
+                                <input type="checkbox" value="CSS" name="skills" id="CSS" > <label for="CSS">CSS</label>
+                                <input type="checkbox" value="JavaScript" name="skills" id="JavaScript"> <label for="JavaScript">JavaScript</label>
+                                <input type="checkbox" value="Java" name="skills" id="Java"> <label for="Java">Java</label>
+                                <input type="checkbox" value="Python" name="skills" id="Python" checked> <label for="Python">Python</label>
+                                <input type="checkbox" value="Golang" name="skills" id="golang" class="my-3"> <label for="golang">Golang</label>
+                                
+                                <button class="btn btn-outline-danger form-control" type="submit">Add Developer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <div class="row all_devs">
+                        <!-- <div class="col-xl-3 my-4">
+                            <div class="card">
+                                <img style="object-fit: cover;" class="card-img" src="https://cdnv2.dropr.io/image/300x300/sf/5445691e-6678-4832-8c6f-b6a4bf802986.jpg?cache_buster=cd7e5da1643bf732331ad85f8b6f585ea82d987c" alt="Dev_img">
+                                <div class="card-body">
+                                    <h4>Tohid Bin Azam</h4>
+                                    <h4>01994249463</h4>
+                                    <h4>Khulna</h4>
+                                    <h4>Male</h4>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">HTML</li>
+                                    </ul>        
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
