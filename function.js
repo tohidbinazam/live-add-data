@@ -1,25 +1,23 @@
 /**
  * LocalStorage senddata
- * @param {*} key 
- * @param {*} value 
- * @returns 
+ * @param {*} key
+ * @param {*} value
+ * @returns
  */
-function senddata(key, value){
-    let stringify = JSON.stringify(value);
-    localStorage.setItem(key , stringify);
+function senddata(key, value) {
+  let stringify = JSON.stringify(value);
+  localStorage.setItem(key, stringify);
 
-    return true;
+  return true;
 }
-
-
 
 /**
  * LocalStorage dtaget
- * @param {*} key 
- * @returns 
+ * @param {*} key
+ * @returns
  */
-function getdata(key){
-    let getitem = localStorage.getItem(key);
-    let parse = JSON.parse(getitem);
-    return parse ?? false;
+function getdata(key) {
+  let getitem = localStorage.getItem(key);
+  let parse = JSON.parse(getitem);
+  return parse ?? [];
 }
