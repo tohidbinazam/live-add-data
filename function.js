@@ -18,6 +18,5 @@ function senddata(key, value) {
  */
 function getdata(key) {
   let getitem = localStorage.getItem(key);
-  let parse = JSON.parse(getitem);
-  return parse ?? [];
+  return JSON.parse(getitem) ?? [];
 }
